@@ -1,0 +1,16 @@
+#!/bin/bash
+for first in {1..10}
+do
+date+"%H:%M:%S"
+ps -ef|wc -l 
+#sleep 5
+done
+
+touch /opt/43_44_evening_a/aigulabdullina/test.txt 
+cat /etc/os-release|head -1 > /opt/43_44_evening_a/aigulabdullina/test.txt
+cat /etc/os-release|head -1|awk '{print $1}' |sed 's/NAME="//' >> /opt/43_44_ev$
+
+for second in {50..100}
+do
+touch $second.txt
+done
